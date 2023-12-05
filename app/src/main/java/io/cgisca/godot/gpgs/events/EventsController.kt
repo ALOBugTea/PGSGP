@@ -84,7 +84,7 @@ class EventsController(
             json.put("name", event.name)
             json.put("value", event.value)
             json.put("description", event.description)
-            json.put("imgUrl", event.iconImageUrl)
+            json.put("imgUrl", event.getIconImageUri())
         } catch (e: JSONException) {
             e.printStackTrace()
         }

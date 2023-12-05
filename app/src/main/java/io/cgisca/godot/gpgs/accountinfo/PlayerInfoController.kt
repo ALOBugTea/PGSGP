@@ -43,14 +43,14 @@ class PlayerInfoController(
                         }
 
                         val playerInfo = PlayerInfo(
-                            player.playerId,
-                            player.displayName,
+                            player.getPlayerId(),
+                            player.getDisplayName(),
                             "TODO: get the name somehow",
-                            player.iconImageUrl,
-                            player.hiResImageUrl,
-                            player.title,
-                            player.bannerImageLandscapeUrl,
-                            player.bannerImagePortraitUrl,
+                            player.getIconImageUri().toString(),
+                            player.getHiResImageUri().toString(),
+                            player.getTitle(),
+                            player.getBannerImageLandscapeUri().toString(),
+                            player.getBannerImagePortraitUri().toString(),
                             playerLevelInfo
                         )
 
